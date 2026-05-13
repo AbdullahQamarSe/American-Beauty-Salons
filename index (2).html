@@ -1,0 +1,3297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="American Beauty Salons - Premium luxury beauty salon in New York City. Offering expert hair styling, skincare, nail art, makeup, and spa treatments at 100 William St, NY.">
+    <meta name="keywords" content="beauty salon, luxury salon, New York salon, hair styling, skincare, nail art, makeup, spa, American Beauty Salons, Manhattan beauty">
+    <meta name="author" content="American Beauty Salons">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="American Beauty Salons | Luxury Beauty & Spa">
+    <meta property="og:description" content="Experience world-class beauty treatments at our premium New York salon. Book your appointment today.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta name="theme-color" content="#0a0a0a">
+    <title>American Beauty Salons | Luxury Beauty & Spa in New York</title>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts: Playfair Display & Montserrat & Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            /* === Primary Color Palette === */
+            --color-black-primary: #0a0a0a;
+            --color-black-secondary: #111111;
+            --color-black-tertiary: #1a1a1a;
+            --color-black-surface: #141414;
+            --color-gold-primary: #c9a96e;
+            --color-gold-light: #d4af37;
+            --color-gold-bright: #e2c875;
+            --color-gold-pale: #b8963e;
+            --color-gold-soft: #a8884a;
+            --color-white-primary: #ffffff;
+            --color-white-secondary: #fafafa;
+            --color-white-tertiary: #f5f5f5;
+            --color-white-muted: #e8e8e8;
+            --color-pink-primary: #f7e6e8;
+            --color-pink-soft: #fdf2f3;
+            --color-pink-light: #f9ebed;
+            --color-pink-medium: #f0d5d8;
+            --color-pink-deep: #e8c4c8;
+            --color-pink-blush: #fbe9eb;
+            --color-rose: #d4a0a7;
+
+            /* === Glassmorphism === */
+            --glass-bg: rgba(255, 255, 255, 0.03);
+            --glass-bg-strong: rgba(255, 255, 255, 0.06);
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --glass-border-strong: rgba(201, 169, 110, 0.25);
+            --glass-blur: 20px;
+            --glass-blur-strong: 40px;
+
+            /* === Shadows === */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.5);
+            --shadow-xl: 0 30px 90px rgba(0, 0, 0, 0.6);
+            --shadow-gold-sm: 0 4px 15px rgba(201, 169, 110, 0.2);
+            --shadow-gold-md: 0 8px 30px rgba(201, 169, 110, 0.3);
+            --shadow-gold-lg: 0 15px 50px rgba(201, 169, 110, 0.35);
+            --shadow-pink: 0 10px 40px rgba(232, 196, 200, 0.2);
+
+            /* === Typography === */
+            --font-heading: 'Playfair Display', 'Cormorant Garamond', Georgia, 'Times New Roman', serif;
+            --font-body: 'Montserrat', 'Helvetica Neue', Arial, sans-serif;
+            --font-accent: 'Great Vibes', 'Cormorant Garamond', cursive;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-base: 1rem;
+            --font-size-md: 1.125rem;
+            --font-size-lg: 1.25rem;
+            --font-size-xl: 1.5rem;
+            --font-size-2xl: 1.875rem;
+            --font-size-3xl: 2.25rem;
+            --font-size-4xl: 3rem;
+            --font-size-5xl: 3.75rem;
+            --font-size-6xl: 4.5rem;
+            --font-size-hero: 5.5rem;
+
+            /* === Spacing === */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 0.75rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 1.5rem;
+            --spacing-xl: 2rem;
+            --spacing-2xl: 3rem;
+            --spacing-3xl: 4rem;
+            --spacing-4xl: 6rem;
+            --spacing-5xl: 8rem;
+            --section-padding: 7rem;
+
+            /* === Border Radius === */
+            --radius-sm: 6px;
+            --radius-md: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 28px;
+            --radius-full: 50%;
+            --radius-pill: 9999px;
+
+            /* === Transitions === */
+            --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-base: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slower: 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-spring: 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            --transition-ease-out-expo: 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+
+            /* === Z-Index Layers === */
+            --z-particles: 0;
+            --z-content: 1;
+            --z-above: 10;
+            --z-navbar: 1000;
+            --z-cursor: 9998;
+            --z-loader: 9999;
+            --z-overlay: 10000;
+
+            /* === Scrollbar === */
+            --scrollbar-width: 6px;
+        }
+
+        /* ============================================= */
+        /* === GLOBAL RESET & BASE STYLES === */
+        /* ============================================= */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+            font-size: 16px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            text-rendering: optimizeLegibility;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--color-black-primary);
+            color: var(--color-white-secondary);
+            line-height: 1.7;
+            overflow-x: hidden;
+            cursor: none;
+            position: relative;
+            min-height: 100vh;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: var(--scrollbar-width);
+        }
+        ::-webkit-scrollbar-track {
+            background: var(--color-black-secondary);
+        }
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(180deg, var(--color-gold-primary), var(--color-gold-pale));
+            border-radius: var(--radius-pill);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(180deg, var(--color-gold-light), var(--color-gold-primary));
+        }
+
+        /* Selection */
+        ::selection {
+            background: rgba(201, 169, 110, 0.35);
+            color: var(--color-white-primary);
+        }
+        ::-moz-selection {
+            background: rgba(201, 169, 110, 0.35);
+            color: var(--color-white-primary);
+        }
+
+        /* ============================================= */
+        /* === SCROLL PROGRESS BAR === */
+        /* ============================================= */
+        #scroll-progress-bar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            width: 0%;
+            background: linear-gradient(90deg, var(--color-gold-pale), var(--color-gold-light), var(--color-gold-bright), var(--color-gold-primary));
+            z-index: var(--z-overlay);
+            transition: width 0.1s linear;
+            border-radius: 0 3px 3px 0;
+            box-shadow: 0 0 12px rgba(201, 169, 110, 0.6), 0 0 30px rgba(201, 169, 110, 0.3);
+        }
+
+        /* ============================================= */
+        /* === CUSTOM CURSOR === */
+        /* ============================================= */
+        .custom-cursor {
+            position: fixed;
+            width: 22px;
+            height: 22px;
+            border: 2px solid var(--color-gold-primary);
+            border-radius: var(--radius-full);
+            pointer-events: none;
+            z-index: var(--z-cursor);
+            transform: translate(-50%, -50%);
+            transition: width 0.25s ease, height 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+            mix-blend-mode: difference;
+        }
+        .custom-cursor-dot {
+            position: fixed;
+            width: 5px;
+            height: 5px;
+            background: var(--color-gold-light);
+            border-radius: var(--radius-full);
+            pointer-events: none;
+            z-index: var(--z-cursor);
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 10px var(--color-gold-light), 0 0 25px rgba(201, 169, 110, 0.7);
+        }
+        .custom-cursor.hover-active {
+            width: 50px;
+            height: 50px;
+            border-color: var(--color-pink-deep);
+            background: rgba(232, 196, 200, 0.1);
+            mix-blend-mode: normal;
+        }
+        .custom-cursor.hover-btn {
+            width: 55px;
+            height: 55px;
+            border-color: var(--color-gold-light);
+            background: rgba(201, 169, 110, 0.15);
+            mix-blend-mode: normal;
+            border-width: 3px;
+        }
+
+        /* Hide default cursor */
+        @media (hover: hover) and (pointer: fine) {
+            body {
+                cursor: none;
+            }
+            a:hover,
+            button:hover,
+            .clickable:hover {
+                cursor: none;
+            }
+        }
+        @media (max-width: 768px) {
+            .custom-cursor,
+            .custom-cursor-dot {
+                display: none !important;
+            }
+            body {
+                cursor: auto !important;
+            }
+            a,
+            button,
+            .clickable {
+                cursor: pointer !important;
+            }
+        }
+
+        /* ============================================= */
+        /* === LOADING SCREEN === */
+        /* ============================================= */
+        #loader-wrapper {
+            position: fixed;
+            inset: 0;
+            z-index: var(--z-loader);
+            background: var(--color-black-primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: opacity 0.6s ease, visibility 0.6s ease;
+        }
+        #loader-wrapper.loaded {
+            opacity: 0;
+            visibility: hidden;
+            pointer-events: none;
+        }
+        .loader-logo {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 4px;
+            color: var(--color-gold-primary);
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            animation: loaderPulse 1.5s ease-in-out infinite;
+        }
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 2px solid rgba(201, 169, 110, 0.2);
+            border-top-color: var(--color-gold-primary);
+            border-radius: var(--radius-full);
+            animation: loaderSpin 1s linear infinite;
+        }
+        .loader-line {
+            width: 120px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, var(--color-gold-primary), transparent);
+            margin-top: 25px;
+            animation: loaderLineShimmer 2s ease-in-out infinite;
+        }
+
+        @keyframes loaderSpin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes loaderPulse {
+            0%,
+            100% {
+                opacity: 0.5;
+                transform: scale(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.06);
+            }
+        }
+        @keyframes loaderLineShimmer {
+            0%,
+            100% {
+                opacity: 0.3;
+                transform: scaleX(1);
+            }
+            50% {
+                opacity: 1;
+                transform: scaleX(1.5);
+            }
+        }
+
+        /* ============================================= */
+        /* === FLOATING PARTICLES CANVAS === */
+        /* ============================================= */
+        #particles-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: var(--z-particles);
+            opacity: 0.7;
+        }
+
+        /* ============================================= */
+        /* === FLOATING WHATSAPP BUTTON === */
+        /* ============================================= */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: var(--z-above);
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #25d366, #128c7e);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.4), 0 0 0 4px rgba(37, 211, 102, 0.15);
+            transition: var(--transition-spring);
+            animation: whatsappFloat 3s ease-in-out infinite;
+            text-decoration: none;
+        }
+        .floating-whatsapp i {
+            font-size: 1.6rem;
+            color: #fff;
+        }
+        .floating-whatsapp:hover {
+            transform: scale(1.12);
+            box-shadow: 0 12px 40px rgba(37, 211, 102, 0.55), 0 0 0 8px rgba(37, 211, 102, 0.2);
+        }
+        .floating-whatsapp .whatsapp-tooltip {
+            position: absolute;
+            right: 75px;
+            background: var(--color-black-tertiary);
+            color: var(--color-white-primary);
+            padding: 10px 18px;
+            border-radius: var(--radius-pill);
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(10px);
+            transition: var(--transition-base);
+            pointer-events: none;
+            border: 1px solid var(--glass-border-strong);
+            box-shadow: var(--shadow-md);
+        }
+        .floating-whatsapp:hover .whatsapp-tooltip {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        @keyframes whatsappFloat {
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* ============================================= */
+        /* === BACK TO TOP BUTTON === */
+        /* ============================================= */
+        #back-to-top {
+            position: fixed;
+            bottom: 105px;
+            right: 35px;
+            z-index: var(--z-above);
+            width: 48px;
+            height: 48px;
+            background: var(--glass-bg-strong);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border: 1px solid var(--glass-border-strong);
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gold-primary);
+            font-size: 1.1rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition-base);
+            box-shadow: var(--shadow-gold-sm);
+        }
+        #back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        #back-to-top:hover {
+            background: var(--color-gold-primary);
+            color: var(--color-black-primary);
+            box-shadow: var(--shadow-gold-lg);
+            transform: translateY(-4px);
+        }
+
+        /* ============================================= */
+        /* === NAVBAR === */
+        /* ============================================= */
+        #navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: var(--z-navbar);
+            padding: 18px 0;
+            transition: var(--transition-base);
+            background: transparent;
+        }
+        #navbar.scrolled {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            padding: 10px 0;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+            border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+        }
+        .navbar-container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar-brand {
+            font-family: var(--font-heading);
+            font-size: 1.55rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--color-white-primary);
+            text-decoration: none;
+            text-transform: uppercase;
+            line-height: 1.2;
+            transition: var(--transition-base);
+            white-space: nowrap;
+        }
+        .navbar-brand span {
+            color: var(--color-gold-primary);
+        }
+        .navbar-brand .brand-subtitle {
+            display: block;
+            font-size: 0.55rem;
+            letter-spacing: 4px;
+            font-weight: 300;
+            color: var(--color-gold-light);
+            font-family: var(--font-body);
+        }
+        .navbar-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            list-style: none;
+        }
+        .navbar-links a {
+            color: var(--color-white-muted);
+            text-decoration: none;
+            font-size: var(--font-size-sm);
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: relative;
+            transition: var(--transition-fast);
+            padding: 6px 0;
+        }
+        .navbar-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--color-gold-primary);
+            transition: var(--transition-base);
+            border-radius: var(--radius-pill);
+        }
+        .navbar-links a:hover {
+            color: var(--color-gold-light);
+        }
+        .navbar-links a:hover::after {
+            width: 100%;
+        }
+        .navbar-cta {
+            background: linear-gradient(135deg, var(--color-gold-primary), var(--color-gold-pale));
+            color: var(--color-black-primary) !important;
+            padding: 10px 22px !important;
+            border-radius: var(--radius-pill);
+            font-weight: 600 !important;
+            letter-spacing: 1px !important;
+            text-transform: uppercase;
+            font-size: var(--font-size-xs) !important;
+            transition: var(--transition-base) !important;
+            box-shadow: var(--shadow-gold-sm);
+            white-space: nowrap;
+        }
+        .navbar-cta:hover {
+            box-shadow: var(--shadow-gold-lg);
+            transform: translateY(-2px);
+            color: var(--color-black-primary) !important;
+        }
+        .navbar-cta::after {
+            display: none !important;
+        }
+        .mobile-menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--color-white-primary);
+            font-size: 1.6rem;
+            cursor: pointer;
+            padding: 8px;
+            transition: var(--transition-fast);
+            z-index: 1001;
+        }
+        .mobile-menu-toggle:hover {
+            color: var(--color-gold-primary);
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 85%;
+            max-width: 420px;
+            height: 100vh;
+            background: rgba(10, 10, 10, 0.97);
+            backdrop-filter: blur(40px);
+            -webkit-backdrop-filter: blur(40px);
+            z-index: 1000;
+            padding: 100px 2.5rem 2.5rem;
+            transition: var(--transition-slower);
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            border-left: 1px solid rgba(201, 169, 110, 0.2);
+        }
+        .mobile-menu.active {
+            right: 0;
+        }
+        .mobile-menu a {
+            color: var(--color-white-secondary);
+            text-decoration: none;
+            font-size: var(--font-size-lg);
+            font-family: var(--font-heading);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: var(--transition-fast);
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        .mobile-menu a:hover {
+            color: var(--color-gold-light);
+            padding-left: 10px;
+        }
+        .mobile-menu .mobile-cta {
+            background: linear-gradient(135deg, var(--color-gold-primary), var(--color-gold-pale));
+            color: var(--color-black-primary) !important;
+            text-align: center;
+            padding: 14px 28px !important;
+            border-radius: var(--radius-pill);
+            font-weight: 600 !important;
+            border: none;
+            margin-top: auto;
+            font-family: var(--font-body) !important;
+            font-size: var(--font-size-sm) !important;
+            letter-spacing: 1px !important;
+        }
+        .mobile-overlay {
+            position: fixed;
+            inset: 0;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 999;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition-base);
+        }
+        .mobile-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        @media (max-width: 1024px) {
+            .navbar-links {
+                display: none;
+            }
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+
+        /* ============================================= */
+        /* === SECTION BASE STYLES === */
+        /* ============================================= */
+        .section {
+            padding: var(--section-padding) 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: var(--z-content);
+        }
+        .section-label {
+            display: inline-block;
+            font-family: var(--font-body);
+            font-size: var(--font-size-xs);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            color: var(--color-gold-primary);
+            margin-bottom: 1rem;
+            font-weight: 600;
+            position: relative;
+            padding-left: 35px;
+        }
+        .section-label::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 25px;
+            height: 1.5px;
+            background: var(--color-gold-primary);
+        }
+        .section-title {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-4xl);
+            font-weight: 700;
+            color: var(--color-white-primary);
+            line-height: 1.15;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+        .section-title em {
+            font-style: italic;
+            color: var(--color-gold-light);
+        }
+        .section-subtitle {
+            color: var(--color-white-muted);
+            font-size: var(--font-size-md);
+            font-weight: 300;
+            max-width: 600px;
+            line-height: 1.7;
+            margin-bottom: 2.5rem;
+        }
+        .text-center {
+            text-align: center;
+        }
+        .text-center .section-subtitle {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .text-center .section-label {
+            padding-left: 0;
+            padding-right: 35px;
+        }
+        .text-center .section-label::before {
+            left: auto;
+            right: 0;
+        }
+
+        /* ============================================= */
+        /* === REVEAL ANIMATION CLASSES === */
+        /* ============================================= */
+        .reveal {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.9s cubic-bezier(0.19, 1, 0.22, 1), transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .reveal.revealed {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .reveal-delay-1 {
+            transition-delay: 0.1s;
+        }
+        .reveal-delay-2 {
+            transition-delay: 0.2s;
+        }
+        .reveal-delay-3 {
+            transition-delay: 0.3s;
+        }
+        .reveal-delay-4 {
+            transition-delay: 0.4s;
+        }
+        .reveal-delay-5 {
+            transition-delay: 0.5s;
+        }
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-60px);
+            transition: opacity 0.9s cubic-bezier(0.19, 1, 0.22, 1), transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .reveal-left.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(60px);
+            transition: opacity 0.9s cubic-bezier(0.19, 1, 0.22, 1), transform 0.9s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .reveal-right.revealed {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        .reveal-scale {
+            opacity: 0;
+            transform: scale(0.85);
+            transition: opacity 0.8s cubic-bezier(0.19, 1, 0.22, 1), transform 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+        }
+        .reveal-scale.revealed {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* ============================================= */
+        /* === HERO SECTION === */
+        /* ============================================= */
+        #hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            padding: 0 2rem;
+            background: var(--color-black-primary);
+        }
+        #hero .hero-bg-image {
+            position: absolute;
+            inset: 0;
+            background: url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1920&q=80') center/cover no-repeat;
+            opacity: 0.35;
+            z-index: 0;
+            transform: scale(1.05);
+            will-change: transform;
+        }
+        #hero .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(10, 10, 10, 0.75) 0%, rgba(10, 10, 10, 0.5) 40%, rgba(10, 10, 10, 0.8) 100%);
+            z-index: 1;
+        }
+        #hero .hero-glow {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(201, 169, 110, 0.12) 0%, transparent 70%);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+            pointer-events: none;
+            animation: heroGlowPulse 4s ease-in-out infinite;
+        }
+        @keyframes heroGlowPulse {
+            0%,
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.7;
+            }
+            50% {
+                transform: translate(-50%, -50%) scale(1.3);
+                opacity: 1;
+            }
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 850px;
+        }
+        .hero-tagline {
+            font-family: var(--font-accent);
+            font-size: 2.8rem;
+            color: var(--color-gold-light);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+            animation: fadeInUp 1s ease-out;
+        }
+        .hero-title {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-hero);
+            font-weight: 800;
+            color: var(--color-white-primary);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 1.5rem;
+            animation: fadeInUp 1s ease-out 0.2s both;
+            text-transform: uppercase;
+        }
+        .hero-title span {
+            color: var(--color-gold-primary);
+            display: block;
+            font-style: italic;
+            font-weight: 600;
+            font-size: 0.55em;
+            letter-spacing: 0;
+            margin-top: 0.2em;
+        }
+        .hero-description {
+            font-size: var(--font-size-lg);
+            color: var(--color-white-muted);
+            font-weight: 300;
+            margin-bottom: 2.5rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+        .hero-buttons {
+            display: flex;
+            gap: 1.2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 15px 32px;
+            font-family: var(--font-body);
+            font-size: var(--font-size-sm);
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: var(--radius-pill);
+            transition: var(--transition-spring);
+            cursor: pointer;
+            border: none;
+            position: relative;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, var(--color-gold-primary), var(--color-gold-pale));
+            color: var(--color-black-primary);
+            box-shadow: var(--shadow-gold-md);
+        }
+        .btn-primary:hover {
+            box-shadow: var(--shadow-gold-lg);
+            transform: translateY(-3px);
+            filter: brightness(1.1);
+        }
+        .btn-outline {
+            background: transparent;
+            color: var(--color-white-primary);
+            border: 2px solid rgba(255, 255, 255, 0.4);
+        }
+        .btn-outline:hover {
+            border-color: var(--color-gold-primary);
+            color: var(--color-gold-light);
+            background: rgba(201, 169, 110, 0.06);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold-sm);
+        }
+        .btn-glow {
+            animation: btnGlow 2.5s ease-in-out infinite;
+        }
+        @keyframes btnGlow {
+            0%,
+            100% {
+                box-shadow: var(--shadow-gold-md);
+            }
+            50% {
+                box-shadow: 0 12px 45px rgba(201, 169, 110, 0.55), 0 0 80px rgba(201, 169, 110, 0.25);
+            }
+        }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hero floating shapes */
+        .hero-floating-shape {
+            position: absolute;
+            pointer-events: none;
+            z-index: 1;
+            opacity: 0.5;
+            animation: floatShape 8s ease-in-out infinite;
+        }
+        .hero-floating-shape.shape-1 {
+            top: 15%;
+            left: 8%;
+            font-size: 3rem;
+            color: var(--color-gold-primary);
+            animation-delay: 0s;
+        }
+        .hero-floating-shape.shape-2 {
+            top: 20%;
+            right: 10%;
+            font-size: 2.5rem;
+            color: var(--color-pink-deep);
+            animation-delay: 2s;
+        }
+        .hero-floating-shape.shape-3 {
+            bottom: 20%;
+            left: 15%;
+            font-size: 2rem;
+            color: var(--color-gold-light);
+            animation-delay: 4s;
+        }
+        .hero-floating-shape.shape-4 {
+            bottom: 25%;
+            right: 12%;
+            font-size: 3.5rem;
+            color: var(--color-rose);
+            animation-delay: 1s;
+        }
+        @keyframes floatShape {
+            0%,
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+            25% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+            50% {
+                transform: translateY(-10px) rotate(-3deg);
+            }
+            75% {
+                transform: translateY(-25px) rotate(4deg);
+            }
+        }
+
+        /* ============================================= */
+        /* === ABOUT SECTION === */
+        /* ============================================= */
+        #about {
+            background: var(--color-black-secondary);
+            position: relative;
+        }
+        #about::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(ellipse at 30% 50%, rgba(201, 169, 110, 0.03) 0%, transparent 60%);
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        .about-image-wrapper {
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+        }
+        .about-image-wrapper img {
+            width: 100%;
+            height: 520px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition-slower);
+            border-radius: var(--radius-lg);
+        }
+        .about-image-wrapper:hover img {
+            transform: scale(1.04);
+        }
+        .about-image-wrapper .about-badge {
+            position: absolute;
+            bottom: 25px;
+            right: -15px;
+            background: var(--glass-bg-strong);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid var(--glass-border-strong);
+            padding: 20px 28px;
+            border-radius: var(--radius-md);
+            color: var(--color-gold-primary);
+            font-family: var(--font-heading);
+            font-size: 2.2rem;
+            font-weight: 700;
+            line-height: 1;
+            box-shadow: var(--shadow-lg);
+        }
+        .about-badge small {
+            display: block;
+            font-size: 0.7rem;
+            font-family: var(--font-body);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--color-white-muted);
+            font-weight: 400;
+        }
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.2rem;
+            margin-top: 2rem;
+        }
+        .about-feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.8rem;
+            padding: 15px;
+            border-radius: var(--radius-md);
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-base);
+        }
+        .about-feature-item:hover {
+            border-color: var(--glass-border-strong);
+            background: var(--glass-bg-strong);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold-sm);
+        }
+        .about-feature-icon {
+            font-size: 1.5rem;
+            color: var(--color-gold-primary);
+            flex-shrink: 0;
+        }
+        .about-feature-text h4 {
+            font-family: var(--font-heading);
+            font-size: 1rem;
+            color: var(--color-white-primary);
+            margin-bottom: 2px;
+        }
+        .about-feature-text p {
+            font-size: var(--font-size-xs);
+            color: var(--color-white-muted);
+            line-height: 1.5;
+        }
+
+        /* ============================================= */
+        /* === SERVICES SECTION === */
+        /* ============================================= */
+        #services {
+            background: var(--color-black-primary);
+            position: relative;
+        }
+        #services::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(232, 196, 200, 0.05) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+        }
+        .service-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem 2rem;
+            text-align: center;
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, rgba(201, 169, 110, 0.04) 0%, transparent 50%);
+            opacity: 0;
+            transition: var(--transition-base);
+        }
+        .service-card:hover {
+            border-color: var(--glass-border-strong);
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-gold-lg);
+            background: var(--glass-bg-strong);
+        }
+        .service-card:hover::before {
+            opacity: 1;
+        }
+        .service-icon {
+            font-size: 2.8rem;
+            color: var(--color-gold-primary);
+            margin-bottom: 1.5rem;
+            transition: var(--transition-spring);
+            display: inline-block;
+        }
+        .service-card:hover .service-icon {
+            transform: scale(1.15) rotate(-8deg);
+            color: var(--color-gold-light);
+        }
+        .service-card h3 {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-xl);
+            color: var(--color-white-primary);
+            margin-bottom: 0.8rem;
+            letter-spacing: -0.5px;
+        }
+        .service-card p {
+            color: var(--color-white-muted);
+            font-size: var(--font-size-sm);
+            line-height: 1.6;
+            margin-bottom: 1.2rem;
+        }
+        .service-card .service-price {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-2xl);
+            color: var(--color-gold-primary);
+            font-weight: 700;
+        }
+        .service-card .service-price small {
+            font-size: 0.5em;
+            font-weight: 400;
+            color: var(--color-white-muted);
+        }
+
+        /* ============================================= */
+        /* === WHY CHOOSE US / STATS === */
+        /* ============================================= */
+        #why-us {
+            background: var(--color-black-secondary);
+            position: relative;
+        }
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+        .stat-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-lg);
+            transition: var(--transition-base);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .stat-card:hover {
+            border-color: var(--glass-border-strong);
+            box-shadow: var(--shadow-gold-sm);
+            transform: translateY(-5px);
+        }
+        .stat-number {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-5xl);
+            font-weight: 800;
+            color: var(--color-gold-primary);
+            line-height: 1;
+            margin-bottom: 0.5rem;
+        }
+        .stat-number .counter-suffix {
+            font-size: 0.6em;
+        }
+        .stat-label {
+            font-size: var(--font-size-sm);
+            color: var(--color-white-muted);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.8rem;
+        }
+        .why-us-card {
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-base);
+            text-align: center;
+        }
+        .why-us-card:hover {
+            border-color: var(--glass-border-strong);
+            background: var(--glass-bg-strong);
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-gold-md);
+        }
+        .why-us-card .why-icon {
+            font-size: 2.4rem;
+            color: var(--color-gold-primary);
+            margin-bottom: 1rem;
+        }
+        .why-us-card h4 {
+            font-family: var(--font-heading);
+            color: var(--color-white-primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+        .why-us-card p {
+            color: var(--color-white-muted);
+            font-size: var(--font-size-sm);
+            line-height: 1.6;
+        }
+
+        /* ============================================= */
+        /* === GALLERY SECTION === */
+        /* ============================================= */
+        #gallery {
+            background: var(--color-black-primary);
+            position: relative;
+        }
+        .gallery-filters {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-bottom: 2.5rem;
+        }
+        .gallery-filter-btn {
+            padding: 10px 24px;
+            border-radius: var(--radius-pill);
+            border: 1px solid var(--glass-border);
+            background: transparent;
+            color: var(--color-white-muted);
+            font-family: var(--font-body);
+            font-size: var(--font-size-xs);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: var(--transition-base);
+            font-weight: 500;
+        }
+        .gallery-filter-btn:hover,
+        .gallery-filter-btn.active {
+            background: var(--color-gold-primary);
+            color: var(--color-black-primary);
+            border-color: var(--color-gold-primary);
+            box-shadow: var(--shadow-gold-sm);
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.2rem;
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 1 / 1;
+            transition: var(--transition-base);
+            border: 2px solid transparent;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition-slower);
+            display: block;
+        }
+        .gallery-item:hover {
+            border-color: var(--color-gold-primary);
+            box-shadow: var(--shadow-gold-lg);
+            z-index: 2;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item .gallery-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, transparent 40%, rgba(10, 10, 10, 0.85) 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: var(--transition-base);
+        }
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+        .gallery-overlay span {
+            color: var(--color-white-primary);
+            font-family: var(--font-heading);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        .gallery-item.hidden {
+            display: none;
+        }
+
+        /* ============================================= */
+        /* === TESTIMONIALS SECTION === */
+        /* ============================================= */
+        #testimonials {
+            background: var(--color-black-secondary);
+            position: relative;
+        }
+        .testimonials-slider-wrapper {
+            position: relative;
+            overflow: hidden;
+            max-width: 750px;
+            margin: 0 auto;
+        }
+        .testimonials-track {
+            display: flex;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .testimonial-slide {
+            min-width: 100%;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        .testimonial-quote-icon {
+            font-size: 3rem;
+            color: var(--color-gold-primary);
+            opacity: 0.6;
+            margin-bottom: 1.5rem;
+        }
+        .testimonial-text {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-xl);
+            font-style: italic;
+            color: var(--color-white-secondary);
+            line-height: 1.7;
+            margin-bottom: 2rem;
+        }
+        .testimonial-author {
+            font-family: var(--font-body);
+            font-weight: 600;
+            color: var(--color-gold-light);
+            letter-spacing: 1px;
+            font-size: var(--font-size-sm);
+            text-transform: uppercase;
+        }
+        .testimonial-author small {
+            display: block;
+            color: var(--color-white-muted);
+            font-weight: 400;
+            margin-top: 3px;
+            letter-spacing: 2px;
+            font-size: 0.7rem;
+        }
+        .testimonial-stars {
+            color: var(--color-gold-primary);
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+        }
+        .testimonial-dots {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 2rem;
+        }
+        .testimonial-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: var(--radius-full);
+            background: rgba(255, 255, 255, 0.2);
+            cursor: pointer;
+            transition: var(--transition-base);
+            border: none;
+        }
+        .testimonial-dot.active {
+            background: var(--color-gold-primary);
+            width: 30px;
+            border-radius: var(--radius-pill);
+            box-shadow: 0 0 10px rgba(201, 169, 110, 0.5);
+        }
+        .testimonial-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 44px;
+            height: 44px;
+            border-radius: var(--radius-full);
+            background: var(--glass-bg-strong);
+            border: 1px solid var(--glass-border-strong);
+            color: var(--color-gold-primary);
+            font-size: 1.2rem;
+            cursor: pointer;
+            z-index: 5;
+            transition: var(--transition-base);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .testimonial-nav:hover {
+            background: var(--color-gold-primary);
+            color: var(--color-black-primary);
+            box-shadow: var(--shadow-gold-md);
+        }
+        .testimonial-nav.prev {
+            left: -20px;
+        }
+        .testimonial-nav.next {
+            right: -20px;
+        }
+
+        /* ============================================= */
+        /* === PRICING SECTION === */
+        /* ============================================= */
+        #pricing {
+            background: var(--color-black-primary);
+            position: relative;
+        }
+        #pricing::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(201, 169, 110, 0.04) 0%, transparent 70%);
+            pointer-events: none;
+        }
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        .pricing-card {
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-xl);
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: var(--transition-base);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .pricing-card.featured {
+            border-color: var(--glass-border-strong);
+            background: var(--glass-bg-strong);
+            box-shadow: var(--shadow-gold-md);
+            transform: scale(1.03);
+        }
+        .pricing-card:hover {
+            border-color: var(--glass-border-strong);
+            box-shadow: var(--shadow-gold-lg);
+            transform: translateY(-6px);
+        }
+        .pricing-card.featured:hover {
+            transform: scale(1.03) translateY(-6px);
+        }
+        .pricing-card .popular-badge {
+            position: absolute;
+            top: 18px;
+            right: -30px;
+            background: linear-gradient(135deg, var(--color-gold-primary), var(--color-gold-light));
+            color: var(--color-black-primary);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            padding: 6px 40px;
+            transform: rotate(28deg);
+            box-shadow: var(--shadow-gold-sm);
+        }
+        .pricing-card h3 {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-xl);
+            color: var(--color-white-primary);
+            margin-bottom: 0.5rem;
+        }
+        .pricing-card .price {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-5xl);
+            font-weight: 800;
+            color: var(--color-gold-primary);
+            margin: 1.5rem 0;
+        }
+        .pricing-card .price small {
+            font-size: 0.35em;
+            font-weight: 400;
+            color: var(--color-white-muted);
+            display: block;
+        }
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin: 1.5rem 0 2rem;
+        }
+        .pricing-features li {
+            padding: 8px 0;
+            color: var(--color-white-muted);
+            font-size: var(--font-size-sm);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        }
+        .pricing-features li i {
+            color: var(--color-gold-primary);
+            margin-right: 8px;
+            font-size: 0.8rem;
+        }
+
+        /* ============================================= */
+        /* === BOOKING CTA SECTION === */
+        /* ============================================= */
+        #booking-cta {
+            background: linear-gradient(180deg, var(--color-black-secondary) 0%, var(--color-black-primary) 100%);
+            position: relative;
+            text-align: center;
+        }
+        #booking-cta .cta-card {
+            background: var(--glass-bg-strong);
+            border: 1px solid var(--glass-border-strong);
+            border-radius: var(--radius-xl);
+            padding: 4rem 3rem;
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            box-shadow: var(--shadow-lg);
+            position: relative;
+            overflow: hidden;
+        }
+        #booking-cta .cta-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at center, rgba(201, 169, 110, 0.05) 0%, transparent 60%);
+            animation: ctaGlowRotate 8s linear infinite;
+            pointer-events: none;
+        }
+        @keyframes ctaGlowRotate {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+        #booking-cta .cta-title {
+            font-family: var(--font-heading);
+            font-size: var(--font-size-4xl);
+            color: var(--color-white-primary);
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        #booking-cta .cta-subtitle {
+            color: var(--color-white-muted);
+            margin-bottom: 2rem;
+            font-size: var(--font-size-md);
+            position: relative;
+        }
+
+        /* ============================================= */
+        /* === FAQ SECTION === */
+        /* ============================================= */
+        #faq {
+            background: var(--color-black-secondary);
+            position: relative;
+        }
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            overflow: hidden;
+            background: var(--glass-bg);
+            transition: var(--transition-base);
+        }
+        .faq-item:hover {
+            border-color: var(--glass-border-strong);
+        }
+        .faq-question {
+            padding: 1.3rem 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-heading);
+            font-size: 1.05rem;
+            color: var(--color-white-primary);
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            transition: var(--transition-fast);
+            user-select: none;
+        }
+        .faq-question:hover {
+            color: var(--color-gold-light);
+        }
+        .faq-icon {
+            font-size: 0.9rem;
+            color: var(--color-gold-primary);
+            transition: var(--transition-base);
+            flex-shrink: 0;
+            margin-left: 1rem;
+        }
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s cubic-bezier(0.4, 0, 0.2, 1), padding 0.5s ease;
+        }
+        .faq-item.active .faq-answer {
+            max-height: 300px;
+        }
+        .faq-answer-inner {
+            padding: 0 1.5rem 1.5rem;
+            color: var(--color-white-muted);
+            font-size: var(--font-size-sm);
+            line-height: 1.7;
+        }
+
+        /* ============================================= */
+        /* === CONTACT SECTION === */
+        /* ============================================= */
+        #contact {
+            background: var(--color-black-primary);
+            position: relative;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .contact-info-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 2rem;
+            padding: 1.2rem;
+            border-radius: var(--radius-md);
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            transition: var(--transition-base);
+        }
+        .contact-info-item:hover {
+            border-color: var(--glass-border-strong);
+            background: var(--glass-bg-strong);
+            box-shadow: var(--shadow-gold-sm);
+        }
+        .contact-info-icon {
+            font-size: 1.5rem;
+            color: var(--color-gold-primary);
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(201, 169, 110, 0.08);
+            border-radius: var(--radius-full);
+        }
+        .contact-info-text h4 {
+            font-family: var(--font-heading);
+            color: var(--color-white-primary);
+            margin-bottom: 3px;
+            font-size: 1rem;
+        }
+        .contact-info-text p {
+            color: var(--color-white-muted);
+            font-size: var(--font-size-sm);
+            line-height: 1.5;
+        }
+        .contact-form {
+            background: var(--glass-bg-strong);
+            border: 1px solid var(--glass-border-strong);
+            border-radius: var(--radius-xl);
+            padding: 2.5rem;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .contact-form .form-group {
+            margin-bottom: 1.2rem;
+        }
+        .contact-form input,
+        .contact-form textarea,
+        .contact-form select {
+            width: 100%;
+            padding: 14px 18px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border);
+            border-radius: var(--radius-md);
+            color: var(--color-white-primary);
+            font-family: var(--font-body);
+            font-size: var(--font-size-sm);
+            transition: var(--transition-base);
+            outline: none;
+            resize: vertical;
+        }
+        .contact-form input:focus,
+        .contact-form textarea:focus,
+        .contact-form select:focus {
+            border-color: var(--color-gold-primary);
+            box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.1);
+            background: rgba(255, 255, 255, 0.06);
+        }
+        .contact-form textarea {
+            min-height: 130px;
+        }
+        .contact-form .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        /* ============================================= */
+        /* === MAP SECTION === */
+        /* ============================================= */
+        #map-section {
+            padding: 0;
+            position: relative;
+        }
+        .map-wrapper {
+            width: 100%;
+            height: 450px;
+            position: relative;
+            filter: grayscale(20%) brightness(0.85);
+            transition: var(--transition-slower);
+        }
+        .map-wrapper:hover {
+            filter: grayscale(0%) brightness(1);
+        }
+        .map-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+
+        /* ============================================= */
+        /* === NEWSLETTER SECTION === */
+        /* ============================================= */
+        #newsletter {
+            background: linear-gradient(180deg, var(--color-black-primary) 0%, var(--color-black-secondary) 100%);
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        .newsletter-form {
+            display: flex;
+            gap: 0.8rem;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        .newsletter-form input {
+            flex: 1;
+            padding: 14px 20px;
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid var(--glass-border-strong);
+            border-radius: var(--radius-pill);
+            color: var(--color-white-primary);
+            font-family: var(--font-body);
+            font-size: var(--font-size-sm);
+            outline: none;
+            transition: var(--transition-base);
+        }
+        .newsletter-form input:focus {
+            border-color: var(--color-gold-primary);
+            box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.1);
+        }
+        .newsletter-form button {
+            padding: 14px 28px;
+            background: linear-gradient(135deg, var(--color-gold-primary), var(--color-gold-pale));
+            color: var(--color-black-primary);
+            border: none;
+            border-radius: var(--radius-pill);
+            font-family: var(--font-body);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: var(--font-size-xs);
+            cursor: pointer;
+            transition: var(--transition-spring);
+            white-space: nowrap;
+        }
+        .newsletter-form button:hover {
+            box-shadow: var(--shadow-gold-lg);
+            transform: translateY(-2px);
+            filter: brightness(1.1);
+        }
+
+        /* ============================================= */
+        /* === FOOTER === */
+        /* ============================================= */
+        #footer {
+            background: var(--color-black-tertiary);
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(201, 169, 110, 0.15);
+            position: relative;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 3rem;
+            max-width: 1200px;
+            margin: 0 auto 3rem;
+        }
+        .footer-brand-name {
+            font-family: var(--font-heading);
+            font-size: 1.6rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: var(--color-white-primary);
+            text-transform: uppercase;
+            margin-bottom: 0.8rem;
+        }
+        .footer-brand-name span {
+            color: var(--color-gold-primary);
+        }
+        .footer-desc {
+            color: var(--color-white-muted);
+            font-size: var(--font-size-sm);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        .footer-social {
+            display: flex;
+            gap: 0.8rem;
+        }
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-full);
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-white-muted);
+            text-decoration: none;
+            transition: var(--transition-base);
+            font-size: 0.9rem;
+        }
+        .footer-social a:hover {
+            background: var(--color-gold-primary);
+            color: var(--color-black-primary);
+            border-color: var(--color-gold-primary);
+            box-shadow: var(--shadow-gold-sm);
+            transform: translateY(-3px);
+        }
+        .footer-col h4 {
+            font-family: var(--font-heading);
+            color: var(--color-white-primary);
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            letter-spacing: 1px;
+        }
+        .footer-col ul {
+            list-style: none;
+        }
+        .footer-col ul li {
+            margin-bottom: 0.7rem;
+        }
+        .footer-col ul li a {
+            color: var(--color-white-muted);
+            text-decoration: none;
+            font-size: var(--font-size-sm);
+            transition: var(--transition-fast);
+        }
+        .footer-col ul li a:hover {
+            color: var(--color-gold-light);
+            padding-left: 5px;
+        }
+        .footer-col ul li i {
+            margin-right: 8px;
+            color: var(--color-gold-primary);
+            font-size: 0.7rem;
+        }
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            color: var(--color-white-muted);
+            font-size: var(--font-size-xs);
+            letter-spacing: 1px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* ============================================= */
+        /* === RESPONSIVE DESIGN === */
+        /* ============================================= */
+        @media (max-width: 1200px) {
+            .section {
+                padding: 5rem 1.5rem;
+            }
+            .section-title {
+                font-size: var(--font-size-3xl);
+            }
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+            .pricing-card.featured:hover {
+                transform: translateY(-6px);
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 1024px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .about-image-wrapper img {
+                height: 380px;
+            }
+            .stats-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .why-us-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-title {
+                font-size: 3rem;
+            }
+            .hero-tagline {
+                font-size: 2rem;
+            }
+        }
+        @media (max-width: 768px) {
+            :root {
+                --section-padding: 4rem;
+                --font-size-hero: 2.5rem;
+            }
+            .section {
+                padding: 4rem 1rem;
+            }
+            .section-title {
+                font-size: var(--font-size-2xl);
+            }
+            .hero-title {
+                font-size: 2.5rem;
+                letter-spacing: -1px;
+            }
+            .hero-tagline {
+                font-size: 1.6rem;
+            }
+            .hero-description {
+                font-size: var(--font-size-sm);
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            .btn {
+                width: 100%;
+                justify-content: center;
+                max-width: 280px;
+            }
+            .services-grid,
+            .why-us-grid,
+            .pricing-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                max-width: 450px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .stats-row {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+            .stat-number {
+                font-size: var(--font-size-3xl);
+            }
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .testimonial-nav.prev {
+                left: 0;
+            }
+            .testimonial-nav.next {
+                right: 0;
+            }
+            .contact-form .form-row {
+                grid-template-columns: 1fr;
+            }
+            .newsletter-form {
+                flex-direction: column;
+                max-width: 350px;
+            }
+            .newsletter-form button {
+                width: 100%;
+            }
+            #back-to-top {
+                bottom: 90px;
+                right: 16px;
+                width: 40px;
+                height: 40px;
+            }
+            .floating-whatsapp {
+                bottom: 20px;
+                right: 16px;
+                width: 50px;
+                height: 50px;
+            }
+            .floating-whatsapp i {
+                font-size: 1.3rem;
+            }
+            .hero-floating-shape {
+                display: none;
+            }
+            .pricing-card.featured {
+                transform: scale(1);
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+            .hero-tagline {
+                font-size: 1.3rem;
+            }
+            .section-title {
+                font-size: 1.6rem;
+            }
+            .stats-row {
+                grid-template-columns: 1fr;
+            }
+            .navbar-brand {
+                font-size: 1.2rem;
+            }
+            .navbar-brand .brand-subtitle {
+                font-size: 0.45rem;
+                letter-spacing: 2px;
+            }
+            .about-image-wrapper img {
+                height: 280px;
+            }
+            .about-image-wrapper .about-badge {
+                font-size: 1.5rem;
+                padding: 14px 18px;
+                right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ============================================= -->
+    <!-- === LOADING SCREEN === -->
+    <!-- ============================================= -->
+    <div id="loader-wrapper">
+        <div class="loader-logo">American Beauty<span>.</span></div>
+        <div class="loader-spinner"></div>
+        <div class="loader-line"></div>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- === SCROLL PROGRESS BAR === -->
+    <!-- ============================================= -->
+    <div id="scroll-progress-bar"></div>
+
+    <!-- ============================================= -->
+    <!-- === CUSTOM CURSOR === -->
+    <!-- ============================================= -->
+    <div class="custom-cursor" id="customCursor"></div>
+    <div class="custom-cursor-dot" id="customCursorDot"></div>
+
+    <!-- ============================================= -->
+    <!-- === FLOATING PARTICLES CANVAS === -->
+    <!-- ============================================= -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- ============================================= -->
+    <!-- === FLOATING WHATSAPP BUTTON === -->
+    <!-- ============================================= -->
+    <a href="https://wa.me/19292101542" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-tooltip">Book via WhatsApp</span>
+    </a>
+
+    <!-- ============================================= -->
+    <!-- === BACK TO TOP BUTTON === -->
+    <!-- ============================================= -->
+    <button id="back-to-top" aria-label="Back to top" title="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ============================================= -->
+    <!-- === NAVBAR === -->
+    <!-- ============================================= -->
+    <nav id="navbar">
+        <div class="navbar-container">
+            <a href="#hero" class="navbar-brand">
+                American Beauty<span>.</span>
+                <span class="brand-subtitle">Luxury Salon & Spa</span>
+            </a>
+            <ul class="navbar-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#booking-cta" class="navbar-cta">Book Now</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#booking-cta" class="mobile-cta">Book Appointment</a>
+    </div>
+
+    <!-- ============================================= -->
+    <!-- === HERO SECTION === -->
+    <!-- ============================================= -->
+    <section id="hero">
+        <div class="hero-bg-image" data-parallax="0.4"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-glow"></div>
+        <!-- Floating decorative shapes -->
+        <div class="hero-floating-shape shape-1"><i class="fas fa-spa"></i></div>
+        <div class="hero-floating-shape shape-2"><i class="fas fa-gem"></i></div>
+        <div class="hero-floating-shape shape-3"><i class="fas fa-star"></i></div>
+        <div class="hero-floating-shape shape-4"><i class="fas fa-crown"></i></div>
+
+        <div class="hero-content">
+            <p class="hero-tagline">✨ Where Beauty Meets Luxury</p>
+            <h1 class="hero-title">
+                American Beauty
+                <span>Salons &amp; Spa</span>
+            </h1>
+            <p class="hero-description">
+                Experience world-class beauty treatments in the heart of New York City. Our award-winning stylists and estheticians deliver unparalleled service in a sophisticated, relaxing environment.
+            </p>
+            <div class="hero-buttons">
+                <a href="#booking-cta" class="btn btn-primary btn-glow clickable">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </a>
+                <a href="#services" class="btn btn-outline clickable">
+                    <i class="fas fa-list-ul"></i> Explore Services
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === ABOUT SECTION === -->
+    <!-- ============================================= -->
+    <section id="about" class="section">
+        <div class="section-container">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&q=80" alt="Luxury salon interior at American Beauty Salons" loading="lazy">
+                    <div class="about-badge">
+                        15+
+                        <small>Years of Excellence</small>
+                    </div>
+                </div>
+                <div class="reveal-right">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Crafting <em>Beauty</em> Since 2009</h2>
+                    <p class="section-subtitle">
+                        American Beauty Salons is Manhattan's premier destination for luxury beauty and wellness. Located at 100 William Street, we blend timeless elegance with modern techniques to bring out your most radiant self.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon"><i class="fas fa-award"></i></div>
+                            <div class="about-feature-text">
+                                <h4>Award-Winning Team</h4>
+                                <p>Internationally certified stylists &amp; estheticians</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon"><i class="fas fa-leaf"></i></div>
+                            <div class="about-feature-text">
+                                <h4>Premium Products</h4>
+                                <p>Organic &amp; cruelty-free luxury brands only</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon"><i class="fas fa-shield-alt"></i></div>
+                            <div class="about-feature-text">
+                                <h4>Safety First</h4>
+                                <p>Hospital-grade sanitization protocols</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <div class="about-feature-icon"><i class="fas fa-heart"></i></div>
+                            <div class="about-feature-text">
+                                <h4>Client Love</h4>
+                                <p>4.9★ average from 2,000+ reviews</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === SERVICES SECTION === -->
+    <!-- ============================================= -->
+    <section id="services" class="section">
+        <div class="section-container">
+            <div class="text-center reveal">
+                <span class="section-label">Our Services</span>
+                <h2 class="section-title">Luxury <em>Treatments</em></h2>
+                <p class="section-subtitle">Discover our comprehensive range of premium beauty services designed to rejuvenate, enhance, and inspire.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon"><i class="fas fa-cut"></i></div>
+                    <h3>Hair Styling</h3>
+                    <p>Precision cuts, balayage, keratin treatments, and bridal styling by master stylists.</p>
+                    <div class="service-price">$85<small>+</small></div>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Skincare &amp; Facial</h3>
+                    <p>Customized facials, microdermabrasion, chemical peels, and LED light therapy.</p>
+                    <div class="service-price">$120<small>+</small></div>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon"><i class="fas fa-hand-sparkles"></i></div>
+                    <h3>Nail Art &amp; Care</h3>
+                    <p>Gel manicures, sculpted extensions, intricate nail art, and deluxe pedicures.</p>
+                    <div class="service-price">$55<small>+</small></div>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="service-icon"><i class="fas fa-paint-brush"></i></div>
+                    <h3>Makeup Artistry</h3>
+                    <p>Bridal, editorial, and natural glam makeup using luxury cosmetics.</p>
+                    <div class="service-price">$95<small>+</small></div>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="service-icon"><i class="fas fa-feather-alt"></i></div>
+                    <h3>Eyelash Extensions</h3>
+                    <p>Classic, hybrid, and volume lashes for effortless everyday glamour.</p>
+                    <div class="service-price">$130<small>+</small></div>
+                </div>
+                <div class="service-card reveal reveal-delay-3">
+                    <div class="service-icon"><i class="fas fa-hot-tub"></i></div>
+                    <h3>Spa &amp; Massage</h3>
+                    <p>Deep tissue, hot stone, aromatherapy massages, and body wraps.</p>
+                    <div class="service-price">$150<small>+</small></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === WHY CHOOSE US / STATS SECTION === -->
+    <!-- ============================================= -->
+    <section id="why-us" class="section">
+        <div class="section-container">
+            <div class="text-center reveal">
+                <span class="section-label">Why Choose Us</span>
+                <h2 class="section-title">The <em>American Beauty</em> Difference</h2>
+                <p class="section-subtitle">Numbers speak louder than words. Here's why we're Manhattan's most trusted beauty destination.</p>
+            </div>
+            <!-- Animated Counters -->
+            <div class="stats-row">
+                <div class="stat-card reveal reveal-delay-1">
+                    <div class="stat-number"><span class="counter" data-target="15000">0</span><span class="counter-suffix">+</span></div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-2">
+                    <div class="stat-number"><span class="counter" data-target="25">0</span><span class="counter-suffix">+</span></div>
+                    <div class="stat-label">Expert Stylists</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-3">
+                    <div class="stat-number"><span class="counter" data-target="50">0</span><span class="counter-suffix">+</span></div>
+                    <div class="stat-label">Services Offered</div>
+                </div>
+                <div class="stat-card reveal reveal-delay-4">
+                    <div class="stat-number"><span class="counter" data-target="98">0</span><span class="counter-suffix">%</span></div>
+                    <div class="stat-label">Client Satisfaction</div>
+                </div>
+            </div>
+            <!-- Why Us Cards -->
+            <div class="why-us-grid">
+                <div class="why-us-card reveal reveal-delay-1">
+                    <div class="why-icon"><i class="fas fa-clock"></i></div>
+                    <h4>Extended Hours</h4>
+                    <p>Open 7 days a week with evening appointments to fit your busy NYC schedule.</p>
+                </div>
+                <div class="why-us-card reveal reveal-delay-2">
+                    <div class="why-icon"><i class="fas fa-wine-glass-alt"></i></div>
+                    <h4>Complimentary Bar</h4>
+                    <p>Enjoy champagne, wine, or artisanal tea with every service—on the house.</p>
+                </div>
+                <div class="why-us-card reveal reveal-delay-3">
+                    <div class="why-icon"><i class="fas fa-parking"></i></div>
+                    <h4>Valet Parking</h4>
+                    <p>Complimentary valet parking for all clients at our William Street location.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === GALLERY SECTION === -->
+    <!-- ============================================= -->
+    <section id="gallery" class="section">
+        <div class="section-container">
+            <div class="text-center reveal">
+                <span class="section-label">Our Work</span>
+                <h2 class="section-title">Beauty <em>Gallery</em></h2>
+                <p class="section-subtitle">A glimpse into the artistry and elegance that defines every American Beauty experience.</p>
+            </div>
+            <div class="gallery-filters reveal">
+                <button class="gallery-filter-btn active" data-filter="all">All</button>
+                <button class="gallery-filter-btn" data-filter="hair">Hair</button>
+                <button class="gallery-filter-btn" data-filter="nails">Nails</button>
+                <button class="gallery-filter-btn" data-filter="makeup">Makeup</button>
+                <button class="gallery-filter-btn" data-filter="spa">Spa</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal-scale" data-category="hair">
+                    <img src="https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=600&q=80" alt="Elegant hair styling" loading="lazy">
+                    <div class="gallery-overlay"><span>Elegant Updo</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="nails">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=600&q=80" alt="Luxury nail art" loading="lazy">
+                    <div class="gallery-overlay"><span>Luxury Nail Art</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="makeup">
+                    <img src="https://images.unsplash.com/photo-1487412912498-0447578fcca8?w=600&q=80" alt="Professional makeup application" loading="lazy">
+                    <div class="gallery-overlay"><span>Bridal Makeup</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1540555700478-4be289fbec6d?w=600&q=80" alt="Relaxing spa treatment" loading="lazy">
+                    <div class="gallery-overlay"><span>Spa Therapy</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="hair">
+                    <img src="https://images.unsplash.com/photo-1522336572468-97b06e8ef143?w=600&q=80" alt="Balayage hair color" loading="lazy">
+                    <div class="gallery-overlay"><span>Balayage Mastery</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="nails">
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=600&q=80" alt="Gel manicure" loading="lazy">
+                    <div class="gallery-overlay"><span>Gel Perfection</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="makeup">
+                    <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&q=80" alt="Editorial makeup look" loading="lazy">
+                    <div class="gallery-overlay"><span>Editorial Glam</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="spa">
+                    <img src="https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?w=600&q=80" alt="Facial treatment" loading="lazy">
+                    <div class="gallery-overlay"><span>Radiance Facial</span></div>
+                </div>
+                <div class="gallery-item reveal-scale" data-category="hair">
+                    <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?w=600&q=80" alt="Hair treatment" loading="lazy">
+                    <div class="gallery-overlay"><span>Keratin Treatment</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === TESTIMONIALS SECTION === -->
+    <!-- ============================================= -->
+    <section id="testimonials" class="section">
+        <div class="section-container">
+            <div class="text-center reveal">
+                <span class="section-label">Testimonials</span>
+                <h2 class="section-title">What Our <em>Clients</em> Say</h2>
+            </div>
+            <div class="testimonials-slider-wrapper reveal-scale">
+                <button class="testimonial-nav prev" id="testimonialPrev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+                <button class="testimonial-nav next" id="testimonialNext" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <div class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">"Absolutely the best salon experience I've ever had. The attention to detail, the luxurious atmosphere, and the incredibly talented stylists make American Beauty a true gem in Manhattan."</p>
+                        <p class="testimonial-author">Sarah Mitchell<small>Financial District Resident</small></p>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <div class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">"From the complimentary champagne to the flawless balayage, every visit feels like a five-star retreat. I've been a loyal client for 5 years and counting!"</p>
+                        <p class="testimonial-author">Jennifer Walsh<small>Beauty Editor</small></p>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <div class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">"The bridal makeup team made me feel like an absolute queen on my wedding day. Their artistry is unmatched, and they truly listen to what you want."</p>
+                        <p class="testimonial-author">Emily Rodriguez<small>Bride, 2024</small></p>
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="testimonial-slide">
+                        <div class="testimonial-stars">★★★★★</div>
+                        <div class="testimonial-quote-icon"><i class="fas fa-quote-right"></i></div>
+                        <p class="testimonial-text">"I travel from Brooklyn just to come here. The spa treatments are divine, and the staff treats you like family. Worth every single penny."</p>
+                        <p class="testimonial-author">Michael Chen<small>Loyal Client</small></p>
+                    </div>
+                </div>
+                <div class="testimonial-dots" id="testimonialDots"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === PRICING SECTION === -->
+    <!-- ============================================= -->
+    <section id="pricing" class="section">
+        <div class="section-container">
+            <div class="text-center reveal">
+                <span class="section-label">Pricing Plans</span>
+                <h2 class="section-title">Luxury <em>Packages</em></h2>
+                <p class="section-subtitle">Curated service bundles designed for the ultimate beauty experience.</p>
+            </div>
+            <div class="pricing-grid">
+                <div class="pricing-card reveal reveal-delay-1">
+                    <h3>Essential</h3>
+                    <div class="price">$195<small>per session</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Haircut &amp; Blowout</li>
+                        <li><i class="fas fa-check-circle"></i> Classic Manicure</li>
+                        <li><i class="fas fa-check-circle"></i> Brow Shaping</li>
+                        <li><i class="fas fa-check-circle"></i> Complimentary Beverage</li>
+                        <li><i class="fas fa-check-circle"></i> 2-Hour Session</li>
+                    </ul>
+                    <a href="#booking-cta" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+                </div>
+                <div class="pricing-card featured reveal reveal-delay-2">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3>Signature</h3>
+                    <div class="price">$395<small>per session</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Everything in Essential</li>
+                        <li><i class="fas fa-check-circle"></i> Deluxe Facial</li>
+                        <li><i class="fas fa-check-circle"></i> Gel Manicure &amp; Pedicure</li>
+                        <li><i class="fas fa-check-circle"></i> Deep Conditioning Treatment</li>
+                        <li><i class="fas fa-check-circle"></i> Champagne Service</li>
+                        <li><i class="fas fa-check-circle"></i> 4-Hour Session</li>
+                    </ul>
+                    <a href="#booking-cta" class="btn btn-primary" style="width:100%;justify-content:center;">Book Now</a>
+                </div>
+                <div class="pricing-card reveal reveal-delay-3">
+                    <h3>Royal</h3>
+                    <div class="price">$695<small>per session</small></div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check-circle"></i> Everything in Signature</li>
+                        <li><i class="fas fa-check-circle"></i> Full Body Massage</li>
+                        <li><i class="fas fa-check-circle"></i> Keratin Hair Treatment</li>
+                        <li><i class="fas fa-check-circle"></i> Professional Makeup</li>
+                        <li><i class="fas fa-check-circle"></i> Luxury Gift Bag</li>
+                        <li><i class="fas fa-check-circle"></i> Full Day Experience</li>
+                    </ul>
+                    <a href="#booking-cta" class="btn btn-outline" style="width:100%;justify-content:center;">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === FAQ SECTION === -->
+    <!-- ============================================= -->
+    <section id="faq" class="section">
+        <div class="section-container">
+            <div class="text-center reveal">
+                <span class="section-label">FAQ</span>
+                <h2 class="section-title">Frequently <em>Asked</em> Questions</h2>
+            </div>
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What should I expect during my first visit?
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">On your first visit, you'll be greeted with a warm welcome and a complimentary beverage. We'll start with a thorough consultation to understand your beauty goals, hair/skin type, and preferences before recommending the best treatments tailored just for you.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        What is your cancellation policy?
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">We require 24-hour notice for cancellations. Late cancellations or no-shows may incur a fee of 50% of the service cost. We understand emergencies happen, so please call us directly and we'll do our best to accommodate you.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Do you offer bridal or group packages?
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">Absolutely! We specialize in bridal beauty and group bookings. Our bridal packages include trials, day-of styling, makeup, and exclusive use of our private suite. Contact us for custom group quotes for parties of 3 or more.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Are your products cruelty-free and vegan?
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">Yes! We exclusively use cruelty-free, ethically sourced products. Many of our product lines are also vegan and organic. We're proud to partner with brands that share our commitment to sustainability and animal welfare.</div></div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Is parking available at your location?
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </div>
+                    <div class="faq-answer"><div class="faq-answer-inner">Yes, we offer complimentary valet parking for all clients at 100 William Street. Simply pull up to our entrance and our valet team will take care of the rest. Public transit is also convenient with multiple subway lines nearby.</div></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === BOOKING CTA SECTION === -->
+    <!-- ============================================= -->
+    <section id="booking-cta" class="section">
+        <div class="section-container">
+            <div class="cta-card reveal-scale">
+                <span class="section-label" style="position:relative;">Ready to Glow?</span>
+                <h3 class="cta-title">Book Your <em>Transformation</em> Today</h3>
+                <p class="cta-subtitle">Reserve your appointment online or call us directly. Walk-ins are always welcome, but booking ensures we're ready for you.</p>
+                <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;position:relative;">
+                    <a href="tel:+19292101542" class="btn btn-primary btn-glow clickable" style="font-size:0.9rem;">
+                        <i class="fas fa-phone-alt"></i> Call (929) 210-1542
+                    </a>
+                    <a href="mailto:info.americanbeautysalons@gmail.com" class="btn btn-outline clickable">
+                        <i class="fas fa-envelope"></i> Email Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === CONTACT SECTION === -->
+    <!-- ============================================= -->
+    <section id="contact" class="section">
+        <div class="section-container">
+            <div class="text-center reveal">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Contact <em>Us</em></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="reveal-left">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Our Location</h4>
+                            <p>100 William St<br>New York, NY 10038</p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-phone-alt"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Phone</h4>
+                            <p><a href="tel:+19292101542" style="color:inherit;text-decoration:none;">+1 (929) 210-1542</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:info.americanbeautysalons@gmail.com" style="color:inherit;text-decoration:none;">info.americanbeautysalons@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-info-text">
+                            <h4>Opening Hours</h4>
+                            <p>
+                                Mon–Fri: 11:00 AM – 9:00 PM<br>
+                                Saturday: 11:00 AM – 8:00 PM<br>
+                                Sunday: 11:00 AM – 7:00 PM
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal-right">
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Full Name *" required aria-label="Full Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Email Address *" required aria-label="Email Address">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Phone Number" aria-label="Phone Number">
+                            </div>
+                            <div class="form-group">
+                                <select aria-label="Service Interest">
+                                    <option value="">Select Service</option>
+                                    <option>Hair Styling</option>
+                                    <option>Skincare & Facial</option>
+                                    <option>Nail Art & Care</option>
+                                    <option>Makeup Artistry</option>
+                                    <option>Eyelash Extensions</option>
+                                    <option>Spa & Massage</option>
+                                    <option>Bridal Package</option>
+                                    <option>Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tell us about your desired service and preferred date/time..." aria-label="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-glow clickable" style="width:100%;justify-content:center;">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================= -->
+    <!-- === GOOGLE MAP SECTION === -->
+    <!-- ============================================= -->
+    <section id="map-section">
+        <div class="map-wrapper">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2!2d-74.0065!3d40.7081!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a1e7c8e5c3b%3A0x6e6e8b2c3c3d4e5f!2s100%20William%20St%2C%20New%20York%2C%20NY%2010038!5e0!3m2!1sen!2sus!4v1715000000000"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="American Beauty Salons Location Map"
+            aria-label="Google Maps location of American Beauty Salons">
+        </iframe>
+    </div>
+</section>
+
+<!-- ============================================= -->
+<!-- === NEWSLETTER SECTION === -->
+<!-- ============================================= -->
+<section id="newsletter">
+    <div class="section-container">
+        <div class="reveal">
+            <span class="section-label">Stay Connected</span>
+            <h2 class="section-title" style="font-size:var(--font-size-2xl);">Join Our <em>VIP</em> List</h2>
+            <p style="color:var(--color-white-muted);margin-bottom:1.5rem;font-size:var(--font-size-sm);">Get exclusive offers, beauty tips, and early access to new services.</p>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                <input type="email" placeholder="Enter your email address" required aria-label="Email for newsletter">
+                <button type="submit" class="clickable">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================= -->
+<!-- === FOOTER === -->
+<!-- ============================================= -->
+<footer id="footer">
+    <div class="footer-grid">
+        <div>
+            <div class="footer-brand-name">American Beauty<span>.</span></div>
+            <p class="footer-desc">
+                Manhattan's premier luxury beauty salon and spa, delivering world-class treatments in an elegant, sophisticated setting at 100 William Street, New York.
+            </p>
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                <a href="#" aria-label="Yelp"><i class="fab fa-yelp"></i></a>
+            </div>
+        </div>
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Services</h4>
+            <ul>
+                <li><a href="#services">Hair Styling</a></li>
+                <li><a href="#services">Skincare</a></li>
+                <li><a href="#services">Nail Care</a></li>
+                <li><a href="#services">Makeup</a></li>
+                <li><a href="#services">Spa & Massage</a></li>
+            </ul>
+        </div>
+        <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul>
+                <li><i class="fas fa-map-marker-alt"></i> 100 William St, NY 10038</li>
+                <li><i class="fas fa-phone-alt"></i> (929) 210-1542</li>
+                <li><i class="fas fa-envelope"></i> info@americanbeautysalons.com</li>
+                <li><i class="fas fa-clock"></i> Mon–Fri: 11AM–9PM</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 American Beauty Salons. All rights reserved. | Designed with <i class="fas fa-heart" style="color:var(--color-pink-deep);"></i> in New York City</p>
+    </div>
+</footer>
+
+<!-- ============================================= -->
+<!-- === JAVASCRIPT === -->
+<!-- ============================================= -->
+<script>
+    (function() {
+        // =============================================
+        // === LOADING SCREEN ===
+        // =============================================
+        const loaderWrapper = document.getElementById('loader-wrapper');
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                loaderWrapper.classList.add('loaded');
+            }, 800);
+        });
+
+        // =============================================
+        // === SCROLL PROGRESS BAR ===
+        // =============================================
+        const scrollProgressBar = document.getElementById('scroll-progress-bar');
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.scrollY;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercent = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+            scrollProgressBar.style.width = scrollPercent + '%';
+        });
+
+        // =============================================
+        // === CUSTOM CURSOR ===
+        // =============================================
+        const cursor = document.getElementById('customCursor');
+        const cursorDot = document.getElementById('customCursorDot');
+        let mouseX = 0,
+            mouseY = 0;
+        let cursorX = 0,
+            cursorY = 0;
+        let dotX = 0,
+            dotY = 0;
+
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth > 768) {
+            document.addEventListener('mousemove', (e) => {
+                mouseX = e.clientX;
+                mouseY = e.clientY;
+                dotX = e.clientX;
+                dotY = e.clientY;
+            });
+
+            function animateCursor() {
+                cursorX += (mouseX - cursorX) * 0.15;
+                cursorY += (mouseY - cursorY) * 0.15;
+                cursor.style.left = cursorX + 'px';
+                cursor.style.top = cursorY + 'px';
+                cursorDot.style.left = dotX + 'px';
+                cursorDot.style.top = dotY + 'px';
+                requestAnimationFrame(animateCursor);
+            }
+            animateCursor();
+
+            // Hover effects on interactive elements
+            const hoverTargets = document.querySelectorAll(
+                'a, button, .clickable, .service-card, .pricing-card, .gallery-item, .faq-question, .why-us-card, .stat-card, .about-feature-item, .contact-info-item, .gallery-filter-btn'
+                );
+            hoverTargets.forEach(el => {
+                el.addEventListener('mouseenter', () => {
+                    if (el.closest('a') || el.closest('button') || el.classList.contains('btn') ||
+                        el.classList.contains('gallery-filter-btn') || el.classList.contains(
+                            'navbar-cta') || el.classList.contains('clickable')) {
+                        cursor.classList.add('hover-btn');
+                    } else {
+                        cursor.classList.add('hover-active');
+                    }
+                });
+                el.addEventListener('mouseleave', () => {
+                    cursor.classList.remove('hover-active', 'hover-btn');
+                });
+            });
+        }
+
+        // =============================================
+        // === FLOATING PARTICLES ===
+        // =============================================
+        const canvas = document.getElementById('particles-canvas');
+        const ctx = canvas.getContext('2d');
+        let particles = [];
+        const maxParticles = 50;
+
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        class Particle {
+            constructor() {
+                this.reset();
+            }
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height + canvas.height;
+                this.size = Math.random() * 2.5 + 0.8;
+                this.speedY = -(Math.random() * 0.7 + 0.2);
+                this.speedX = (Math.random() - 0.5) * 0.4;
+                this.opacity = Math.random() * 0.6 + 0.2;
+                this.golden = Math.random() > 0.5;
+            }
+            update() {
+                this.y += this.speedY;
+                this.x += this.speedX;
+                if (this.y < -20 || this.x < -20 || this.x > canvas.width + 20) {
+                    this.reset();
+                    this.y = canvas.height + 20;
+                }
+            }
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                if (this.golden) {
+                    ctx.fillStyle = `rgba(201,169,110,${this.opacity})`;
+                } else {
+                    ctx.fillStyle = `rgba(232,196,200,${this.opacity})`;
+                }
+                ctx.fill();
+                // Subtle glow
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size * 2.5, 0, Math.PI * 2);
+                if (this.golden) {
+                    ctx.fillStyle = `rgba(201,169,110,${this.opacity * 0.12})`;
+                } else {
+                    ctx.fillStyle = `rgba(232,196,200,${this.opacity * 0.08})`;
+                }
+                ctx.fill();
+            }
+        }
+
+        for (let i = 0; i < maxParticles; i++) {
+            const p = new Particle();
+            p.y = Math.random() * canvas.height;
+            particles.push(p);
+        }
+
+        function animateParticles() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            particles.forEach(p => {
+                p.update();
+                p.draw();
+            });
+            requestAnimationFrame(animateParticles);
+        }
+        animateParticles();
+
+        // =============================================
+        // === NAVBAR SCROLL EFFECT ===
+        // =============================================
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 60) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // =============================================
+        // === MOBILE MENU ===
+        // =============================================
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            mobileMenuToggle.innerHTML = '<i class="fas fa-times"></i>';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+            mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+        }
+
+        mobileMenuToggle.addEventListener('click', () => {
+            if (mobileMenu.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                closeMobileMenu();
+            });
+        });
+
+        // =============================================
+        // === SMOOTH SCROLL FOR NAVBAR LINKS ===
+        // =============================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                const target = document.querySelector(targetId);
+                if (target) {
+                    e.preventDefault();
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.getBoundingClientRect().top + window.scrollY -
+                        navHeight - 10;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // =============================================
+        // === INTERSECTION OBSERVER FOR REVEAL ANIMATIONS ===
+        // =============================================
+        const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.12,
+            rootMargin: '0px 0px -40px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // =============================================
+        // === ANIMATED COUNTERS ===
+        // =============================================
+        const counterElements = document.querySelectorAll('.counter');
+        const countersObserved = new Set();
+
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && !countersObserved.has(entry.target)) {
+                    countersObserved.add(entry.target);
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    const duration = 2000;
+                    const startTime = performance.now();
+                    const startVal = 0;
+
+                    function updateCounter(timestamp) {
+                        const elapsed = timestamp - startTime;
+                        const progress = Math.min(elapsed / duration, 1);
+                        const eased = 1 - Math.pow(1 - progress, 3);
+                        const current = Math.round(startVal + (target - startVal) * eased);
+                        entry.target.textContent = current.toLocaleString();
+                        if (progress < 1) {
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            entry.target.textContent = target.toLocaleString();
+                        }
+                    }
+                    requestAnimationFrame(updateCounter);
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.5
+        });
+
+        counterElements.forEach(el => counterObserver.observe(el));
+
+        // =============================================
+        // === GALLERY FILTERING ===
+        // =============================================
+        const filterBtns = document.querySelectorAll('.gallery-filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                const filter = btn.getAttribute('data-filter');
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.classList.remove('hidden');
+                        item.style.animation = 'fadeInScale 0.5s ease forwards';
+                    } else {
+                        item.classList.add('hidden');
+                    }
+                });
+                // Re-observe gallery items for reveal
+                setTimeout(() => {
+                    galleryItems.forEach(item => {
+                        if (!item.classList.contains('hidden') && !item.classList.contains(
+                                'revealed')) {
+                            item.classList.add('revealed');
+                        }
+                    });
+                }, 100);
+            });
+        });
+
+        // Add fadeInScale keyframes dynamically
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = `
+                    @keyframes fadeInScale {
+                        from { opacity: 0; transform: scale(0.9); }
+                        to { opacity: 1; transform: scale(1); }
+                    }
+                `;
+        document.head.appendChild(styleSheet);
+
+        // =============================================
+        // === TESTIMONIALS SLIDER ===
+        // =============================================
+        const testimonialsTrack = document.getElementById('testimonialsTrack');
+        const testimonialSlides = document.querySelectorAll('.testimonial-slide');
+        const testimonialDotsContainer = document.getElementById('testimonialDots');
+        const prevBtn = document.getElementById('testimonialPrev');
+        const nextBtn = document.getElementById('testimonialNext');
+        let currentSlide = 0;
+        const totalSlides = testimonialSlides.length;
+        let autoSlideInterval;
+
+        // Create dots
+        for (let i = 0; i < totalSlides; i++) {
+            const dot = document.createElement('button');
+            dot.classList.add('testimonial-dot');
+            if (i === 0) dot.classList.add('active');
+            dot.setAttribute('aria-label', 'Testimonial ' + (i + 1));
+            dot.addEventListener('click', () => goToSlide(i));
+            testimonialDotsContainer.appendChild(dot);
+        }
+        const dots = document.querySelectorAll('.testimonial-dot');
+
+        function goToSlide(index) {
+            currentSlide = index;
+            if (currentSlide < 0) currentSlide = totalSlides - 1;
+            if (currentSlide >= totalSlides) currentSlide = 0;
+            testimonialsTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots.forEach((d, i) => d.classList.toggle('active', i === currentSlide));
+            resetAutoSlide();
+        }
+
+        function nextSlide() {
+            goToSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            goToSlide(currentSlide - 1);
+        }
+
+        function resetAutoSlide() {
+            clearInterval(autoSlideInterval);
+            autoSlideInterval = setInterval(nextSlide, 5000);
+        }
+
+        prevBtn.addEventListener('click', prevSlide);
+        nextBtn.addEventListener('click', nextSlide);
+        resetAutoSlide();
+
+        // Pause on hover
+        const sliderWrapper = document.querySelector('.testimonials-slider-wrapper');
+        sliderWrapper.addEventListener('mouseenter', () => clearInterval(autoSlideInterval));
+        sliderWrapper.addEventListener('mouseleave', resetAutoSlide);
+
+        // Touch support
+        let touchStartX = 0;
+        let touchEndX = 0;
+        sliderWrapper.addEventListener('touchstart', (e) => {
+            touchStartX = e.changedTouches[0].screenX;
+        }, { passive: true });
+        sliderWrapper.addEventListener('touchend', (e) => {
+            touchEndX = e.changedTouches[0].screenX;
+            const diff = touchStartX - touchEndX;
+            if (Math.abs(diff) > 50) {
+                if (diff > 0) nextSlide();
+                else prevSlide();
+            }
+        });
+
+        // =============================================
+        // === FAQ ACCORDION ===
+        // =============================================
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const isActive = item.classList.contains('active');
+                // Close all
+                faqItems.forEach(fi => fi.classList.remove('active'));
+                // Open clicked if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        // =============================================
+        // === BACK TO TOP BUTTON ===
+        // =============================================
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // =============================================
+        // === PARALLAX EFFECT ON HERO ===
+        // =============================================
+        const parallaxEl = document.querySelector('[data-parallax]');
+        if (parallaxEl) {
+            window.addEventListener('scroll', () => {
+                const scrollY = window.scrollY;
+                const parallaxRate = parseFloat(parallaxEl.getAttribute('data-parallax'));
+                if (scrollY < window.innerHeight) {
+                    parallaxEl.style.transform = `scale(1.05) translateY(${scrollY * parallaxRate}px)`;
+                }
+            });
+        }
+
+        // =============================================
+        // === FORM HANDLERS ===
+        // =============================================
+        window.handleContactSubmit = function(event) {
+            event.preventDefault();
+            const form = event.target;
+            const btn = form.querySelector('button[type="submit"]');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-check-circle"></i> Message Sent!';
+                btn.style.background = 'linear-gradient(135deg, #4ade80, #22c55e)';
+                form.reset();
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 2500);
+            }, 1200);
+            return false;
+        };
+
+        window.handleNewsletterSubmit = function(event) {
+            event.preventDefault();
+            const form = event.target;
+            const btn = form.querySelector('button');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+            btn.disabled = true;
+            setTimeout(() => {
+                btn.innerHTML = '<i class="fas fa-check"></i> Subscribed!';
+                btn.style.background = 'linear-gradient(135deg, #4ade80, #22c55e)';
+                form.reset();
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.disabled = false;
+                }, 2500);
+            }, 1000);
+            return false;
+        };
+
+        // =============================================
+        // === KEYBOARD ACCESSIBILITY ===
+        // =============================================
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeMobileMenu();
+            }
+        });
+
+        // =============================================
+        // === INITIAL SETUP ===
+        // =============================================
+        console.log('%c✨ American Beauty Salons %c| %cPremium Luxury Experience %c✨',
+            'color: #c9a96e; font-size: 1.2rem; font-weight: bold;',
+            'color: #fff;',
+            'color: #f7e6e8; font-style: italic;',
+            'color: #c9a96e;');
+        console.log('%c📍 100 William St, New York, NY 10038 | 📞 (929) 210-1542',
+            'color: #e8e8e8; font-size: 0.8rem;');
+        console.log('%c💎 Crafted with elegance & precision — just like our services.',
+            'color: #d4af37; font-style: italic;');
+
+    })();
+</script>
+</body>
+</html>
